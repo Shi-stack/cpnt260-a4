@@ -1,0 +1,177 @@
+/*Background Image*/
+
+body{
+
+  background-image:url(asset/city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+            
+}
+
+/*Main Header Roshiv Tech Inc.*/
+
+header {
+  position: relative;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  
+}
+
+.logo{
+  width:150px;
+  height:120px;
+}
+
+h1{
+  padding:1rem;
+  color:black;
+  font-family: 'Fredoka One', cursive;
+  font-size:50px;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-align: center;
+}
+
+/*Designing Nav Menu */
+
+.nav > a * {
+  text-decoration:none;
+}
+
+li * {
+  padding: 2rem;
+  color:black;
+  padding:0;
+  margin:0;
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  text-decoration: none;
+
+}
+
+.button{
+  border: 2px solid black;
+  padding:0.5rem;
+  border-radius: 15px;
+  background-color: rgb(241, 237, 229);
+}
+
+/*Creating Nav responsive*/
+
+@media screen and (max-width: 600px){ 
+  .logo{
+    text-align: center;
+  }  
+
+  h1{
+    text-align: center;
+    justify-content: space-between;
+  }
+  nav {
+    align-self: left; 
+    display: flex;
+    justify-content: space-between;
+    }
+  }
+
+
+ nav * {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between; 
+    margin:auto;
+
+  }
+ /** making nav hover and active **/
+
+nav>ul>* a:hover{
+
+    background-color: #BAB2B5;
+
+}
+
+nav>ul> * a:active {
+background-color: #123c69;
+}
+
+/*Styling my main*/
+
+.main{
+  padding:3rem;
+  margin:auto;
+  border-radius: 50%;
+  max-width: 70%;
+  min-width: 15ch;
+  background-color: rgb(250, 250, 219);
+  background-blend-mode: hard-light;
+  opacity: 0.6;
+}
+
+
+
+h2{
+  padding:0.5rem;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  color: black;
+  margin:auto;
+}
+
+p{
+  padding:0.5rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  max-width:25ch;
+  color:black;
+  margin:auto;  
+}
+@media screen and (max-width: 600px) and (min-width: 400px){
+  h2{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 25px;
+  }
+
+  body{
+    background-image: none;
+  }
+}
+/*Making main reponsive*/
+.main *{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+/*Footer*/
+
+.footer{
+  padding: 1rem;
+  font-size:30px;
+  font-family: 'Alice', serif;
+  color:white;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.map{
+  
+  text-align: center;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.mapouter{
+  position:relative;text-align:right;height:500px;width:600px;
+}
+
+.gmap_canvas {
+  overflow:hidden;background:none!important;height:500px;width:600px;
+  }
