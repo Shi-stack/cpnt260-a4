@@ -1,0 +1,19 @@
+
+.inquiry * {
+  padding: 1rem;
+  text-align: left;
+  width: 500px;
+  height:80px;
+  font-size:20px;
+  font-family: 'Alice', serif;
+  border:3px solid black;
+  border-radius: 10px;
+}
+
+.inquiry { 
+  padding:5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
